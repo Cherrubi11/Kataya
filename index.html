@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kataya's Storybook</title>
+  </nav>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="collect-sound" src="sfx/click.mp3"></audio>
+
+    <div class="starry-bg"></div>
+
+  <div class="scrapbook">
+    <button id="open-drawing-btn">🖊️ Open Sketchbook</button>
+
+    <div id="drawing-popup" class="popup hidden">
+    <div class="popup-header">
+        <h3>Kataya's Sketchbook</h3>
+        <button id="close-drawing-btn">✖</button>
+    </div>
+    <canvas id="drawing-canvas" width="300" height="300"></canvas>
+    <input type="color" id="color-picker" value="#ffffff">
+    <button id="clear-canvas">🧼 Clear</button>
+    </div>
+
+
+    <h1 class="title">Kataya</h1>
+    <p class="subtitle">The Cursed Rebirth</p>
+    <div class="intro-note">
+      <p>"Yellow-eyed, black-haired, reborn through time."</p>
+    </div>
+
+    <button id="mood-btn">🌙 Change Mood</button>
+
+    <button id="music-btn">🔊 Music On</button>
+    <audio id="bg-music" src="assets/music/theme.mp3" loop></audio>
+
+    <a href="journal.html" class="journal-btn">📓 Visit the Journal</a>
+
+
+    <div id="playlist-container" class="playlist">
+    <h2>Kataya’s Playlist</h2>
+    <audio id="audio-player" controls></audio>
+
+    <div class="volume-control">
+    <label for="volume-slider">🔉 Volume</label>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.8">
+    </div>
+
+
+    <div class="playlist-controls">
+        <button id="prev-btn">⏮️ Prev</button>
+        <button id="next-btn">⏭️ Next</button>
+    </div>
+    
+    <ul id="track-list">
+        <li data-src="assets/music/song1.mp3" class="active">Caramel</li>
+        <li data-src="assets/music/song2.mp3">Bulls In The Bronx</li>
+        <li data-src="assets/music/song3.mp3">The Sky Under The Sea</li>
+        <li data-src="assets/music/song4.mp3">RUNRUNRUN</li>
+        <li data-src="assets/music/song5.mp3">40 Days</li>
+    </ul>
+    </div>
+
+
+    <div class="bio-card">
+  <h2>About Kataya</h2>
+  <div class="hidden-message-wrapper">
+    <img src="images/symbol1.png" alt="Mysterious Symbol" class="hidden-symbol" />
+    <div class="hidden-message">“The curse binds the soul beyond death…”</div>
+    </div>
+  <ul>
+    <li><strong>Eyes:</strong> Yellow, glowing faintly</li>
+    <li><strong>Hair:</strong> Long, black, never aging</li>
+    <li><strong>Curse:</strong> Eternal rebirth with full memory</li>
+    <li><strong>Weapon:</strong> None by default—she adapts</li>
+    <li><strong>Rebirths:</strong> 37 and counting</li>
+    <li><strong>Quote:</strong> “Death is a door. I just walk through.”</li>
+  </ul>
+</div>
+
+    <img src="images/kataya.png" class="kataya-item" data-id="12.2">
+
+  </div>
+
+  <section class="lore-section">
+
+    <h2 class="section-title">🕯 Lore Journal</h2>
+
+    <!-- add as many as you want, just copy -->
+    <div class="lore-entry">
+        <button class="lore-title">The First Death</button>
+        <div class="lore-content">
+        <p>Kataya was only thirteen the first time the curse took hold. A quiet village girl, lost to fire. She awoke beneath moonlight, gasping, untouched. No one remembered her but the stars.</p>
+        </div>
+    </div>
+
+    </section>
+
+
+    <div class="hidden-items">
+    <img src="images/item1.png" class="lore-item" data-id="1" alt="mysterious item">
+    <img src="images/item2.png" class="lore-item" data-id="2" alt="mysterious item">
+    <img src="images/item3.png" class="lore-item" data-id="3" alt="mysterious item">
+    </div>
+
+    <div id="unlocked-lore" class="hidden-lore hidden">
+    <h3>✨ Hidden Lore Unlocked</h3>
+    <p>"Even in the silence between lives, the curse speaks..."</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/journal.js"></script>
+    <script src="js/draw.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
